@@ -87,6 +87,71 @@ body{
     padding: 0 5% 0 5%;
     
 }
-.intro__content .intro_banner{
+.intro__content .intro__banner{
     width: 1425px;
 }
+.intro .intro__block{
+    background: white;
+    position: absolute;
+    top: 150%;
+    left: 20%;
+    opacity: 0.8;
+    width: 800px;
+    height: 500px;
+    padding: 50px;
+}
+.intro__block .block__title{
+    color: #079b19;
+    font-size: 30px;
+    text-align: center;
+}
+.intro__block .block__desc{
+    color: gray;
+    font-size: 12px;
+}
+.intro__block .block__btn{
+    text-align: center;
+    border: none;
+    padding: 25px 100px 25px 100px;
+    background: #079b19;
+    color: white;
+    opacity: 1;
+    font-size: 20px;
+}
+.blogs {
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.blogs .blogs__item{
+    width: 48%;
+}
+.blogs .blogs__title{
+    color: #079b19;
+    text-align: center;
+    font-size: 25px;
+}
+.blogs .blogs__desc{
+    color: gray;
+    padding: 0px 20px 0px 20px;
+    text-align: start;
+    font-size: 25px;
+    font-size: 12px;
+}
+
+footer ul li{
+    display: inline;
+}
+footer .nav__item{
+    color: #7c7c7c;
+    size: 18px;
+    text-decoration: none;
+    margin-left: 30px;
+}
+footer .footer__bottom{
+    height: 50px;
+    width: 100%;
+    background:  #079b19;
+}
+
+

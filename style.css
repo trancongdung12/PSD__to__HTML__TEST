@@ -1,4 +1,10 @@
+@font-face {
+    
+    src: url('font/UTM\ Avo.ttf'); 
+    font-family: 'HPAvo';
+}
 body{
+    font-family: 'HPAvo';
     margin: 0 0;
 }
 .header{
@@ -8,11 +14,9 @@ body{
 }
 .header .header__title{
     text-align: center;
-    font-weight: 300;
     color: #079b19;
 }
 .navbar{
-    margin-top: 30px;
     width: 100%;
 }
 .navbar ul{
@@ -22,13 +26,14 @@ body{
     display: inline;
 }
 .navbar ul li .nav__item{
+    font-weight: 500;
     color: #7c7c7c;
     size: 18px;
     text-decoration: none;
     margin-right: 30px;
 }
 .banner{
-    margin-top: 20px;
+    margin-top: 80px;
     width: 100%;
 }
 .container{
@@ -36,7 +41,21 @@ body{
     
 }
 .container .banner__img{
-    width: 1110px;
+    width: 100%;
+}
+.banner .fas{
+    color: #848484;
+    font-size: 50px;
+}
+.banner .fa-chevron-left{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+}
+.banner .fa-chevron-right{
+    top: 50%;
+    right: 8%;
+    position: absolute;
 }
 .dot__icon{
     margin-top: 40px;
@@ -51,20 +70,23 @@ body{
 }
 .living__room h2{
     margin-top: 80px;
+    margin-bottom: 50px;
     text-align: center;
     font-weight: 200;
     color: #079b19;
 }
 .living__room .lv__content{
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
     justify-content: space-between;
 
 }
 .living__room .lv__content .lv__item{
-    width: 260px;
+    width: 23.5%;
 }
 .living__room .lv__content .lv__item .lv__img{
-    width: 260px;
+    width: 100%;
 }
 .living__room .lv__content .lv__item .lv__title{
     color: #079b19;
@@ -78,38 +100,39 @@ body{
     font-size: 11px;
 }
 
-
 .intro{
     margin-top: 80px;
     width: 100%;
 }
 .intro__content{
     padding: 0 5% 0 5%;
-    
 }
 .intro__content .intro__banner{
-    width: 1425px;
+    width: 100%;
 }
 .intro .intro__block{
     background: white;
     position: absolute;
-    top: 150%;
-    left: 20%;
+    top: 180%;
+    left: 21%;
     opacity: 0.8;
-    width: 800px;
-    height: 500px;
+    width: 820px;
+    height: 460px;
     padding: 50px;
 }
 .intro__block .block__title{
     color: #079b19;
     font-size: 30px;
+    margin-bottom: 60px;
     text-align: center;
 }
 .intro__block .block__desc{
     color: gray;
     font-size: 12px;
 }
-.intro__block .block__btn{
+.intro__block .block__btn {
+    margin-top: 130px;
+    margin-left: 240px;
     text-align: center;
     border: none;
     padding: 25px 100px 25px 100px;
@@ -119,12 +142,18 @@ body{
     font-size: 20px;
 }
 .blogs {
+    width: 100%;
     margin-bottom: 100px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .blogs .blogs__item{
     width: 48%;
+}
+.blogs .blogs__item img{
+    margin-top: 20px;
+    width: 100%;
 }
 .blogs .blogs__title{
     color: #079b19;
@@ -133,12 +162,17 @@ body{
 }
 .blogs .blogs__desc{
     color: gray;
-    padding: 0px 20px 0px 20px;
-    text-align: start;
-    font-size: 25px;
+    padding: 0px 35px 0px 30px;
     font-size: 12px;
 }
-
+.footer__hr{
+    margin: 0 5% 0 5%;
+}
+footer ul{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
 footer ul li{
     display: inline;
 }
@@ -149,9 +183,138 @@ footer .nav__item{
     margin-left: 30px;
 }
 footer .footer__bottom{
+    padding: 0 5% 0 5%;
+    
+}
+footer .footer__bottom .bottom__content{
     height: 50px;
     width: 100%;
     background:  #079b19;
 }
 
+/** RESPONSIVE **/
 
+@media only screen and (max-width: 900px){
+    .header{
+        margin-top: 30px;
+        width: 160%;
+    }
+    .banner .fa-chevron-left{
+        top: 100%;
+    }
+    .banner .fa-chevron-right{
+        top: 100%;
+        right: -50%;
+    }
+    .container .banner__img{
+        width: 183%;
+    }
+    .navbar ul li .nav__item{
+        font-size: 20px;
+    }
+    .banner__img{
+        width: 100%;
+    }
+    .intro .intro__block{
+        top: 210%;
+        left: 32%;
+    }
+    .dot__icon{
+        width: 180%;
+    }
+    .living__room h2{
+        width: 180%;
+    }
+    .living__room .lv__content{
+        width: 178%;
+    }
+    .intro__content .intro__banner{
+        width: 166%;
+    }
+    .blogs{
+        width: 180%;
+    }
+    footer{
+        width: 160%;
+    }
+}
+@media only screen and (max-width: 576px){
+    .header{
+        width: 240%;
+    }
+    .header .header__title{  
+        font-size: 50px;
+    }
+    .navbar{
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .navbar ul li .nav__item{
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .banner{
+        margin-top: 140px;
+    }
+    .container .banner__img {
+        width: 300%;
+    }
+    .banner .fa-chevron-right{    
+        right: -132%;
+    }
+    
+    .dot__icon{
+        width: 300%;
+    }
+    .living__room h2{
+        font-size: 35px;
+        font-weight: 600;
+        width: 300%;
+    }
+    .living__room .lv__content{
+        width: 300%;
+    }
+    .living__room .lv__content .lv__item{
+        width: 48%;
+        margin-top: 20px;
+    }
+    .living__room .lv__content .lv__item .lv__title{
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .living__room .lv__content .lv__item .lv__desc{
+        font-size: 20px;
+    }
+
+    .intro .intro__block{
+        top: 355%;
+        left: 40%;
+    }
+    .intro__content .intro__banner{
+       width: 255%;
+    }
+    .intro__block .block__title{
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .intro__block .block__desc{
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .blogs{
+        width: 300%;
+    }
+    .blogs .blogs__item{
+        width: 100%;
+    }
+    .blogs .blogs__title{
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .blogs .blogs__desc{
+       font-size: 20px;
+    }
+    footer{
+        width: 240%;
+    }
+}
